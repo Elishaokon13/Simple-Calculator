@@ -1,0 +1,39 @@
+res path mapping:
+    res/drawable -> r/a
+    res/layout-v17 -> r/b
+    res/layout -> r/c
+
+
+res id mapping:
+    com.melvincypher.calculator.R.drawable.Ic -> com.melvincypher.calculator.R.drawable.a
+    com.melvincypher.calculator.R.drawable.button -> com.melvincypher.calculator.R.drawable.b
+    com.melvincypher.calculator.R.drawable.c -> com.melvincypher.calculator.R.drawable.d
+    com.melvincypher.calculator.R.drawable.download -> com.melvincypher.calculator.R.drawable.e
+    com.melvincypher.calculator.R.drawable.ic_launcher -> com.melvincypher.calculator.R.drawable.f
+    com.melvincypher.calculator.R.drawable.roundedbutton -> com.melvincypher.calculator.R.drawable.g
+    com.melvincypher.calculator.R.layout.activity_main -> com.melvincypher.calculator.R.layout.a
+    com.melvincypher.calculator.R.color.colorPrimary -> com.melvincypher.calculator.R.color.a
+    com.melvincypher.calculator.R.color.colorPrimaryDark -> com.melvincypher.calculator.R.color.b
+    com.melvincypher.calculator.R.color.colorAccent -> com.melvincypher.calculator.R.color.c
+    com.melvincypher.calculator.R.string.app_name -> com.melvincypher.calculator.R.string.a
+    com.melvincypher.calculator.R.string.footer -> com.melvincypher.calculator.R.string.b
+    com.melvincypher.calculator.R.style.AppTheme -> com.melvincypher.calculator.R.style.a
+    com.melvincypher.calculator.R.id.relative1 -> com.melvincypher.calculator.R.id.a
+    com.melvincypher.calculator.R.id.edt1 -> com.melvincypher.calculator.R.id.b
+    com.melvincypher.calculator.R.id.button1 -> com.melvincypher.calculator.R.id.c
+    com.melvincypher.calculator.R.id.button4 -> com.melvincypher.calculator.R.id.d
+    com.melvincypher.calculator.R.id.button2 -> com.melvincypher.calculator.R.id.e
+    com.melvincypher.calculator.R.id.button3 -> com.melvincypher.calculator.R.id.f
+    com.melvincypher.calculator.R.id.button5 -> com.melvincypher.calculator.R.id.g
+    com.melvincypher.calculator.R.id.button6 -> com.melvincypher.calculator.R.id.h
+    com.melvincypher.calculator.R.id.button7 -> com.melvincypher.calculator.R.id.i
+    com.melvincypher.calculator.R.id.button8 -> com.melvincypher.calculator.R.id.j
+    com.melvincypher.calculator.R.id.button9 -> com.melvincypher.calculator.R.id.k
+    com.melvincypher.calculator.R.id.buttonadd -> com.melvincypher.calculator.R.id.l
+    com.melvincypher.calculator.R.id.buttonsub -> com.melvincypher.calculator.R.id.m
+    com.melvincypher.calculator.R.id.buttonmul -> com.melvincypher.calculator.R.id.n
+    com.melvincypher.calculator.R.id.button10 -> com.melvincypher.calculator.R.id.o
+    com.melvincypher.calculator.R.id.button0 -> com.melvincypher.calculator.R.id.p
+    com.melvincypher.calculator.R.id.buttonC -> com.melvincypher.calculator.R.id.q
+    com.melvincypher.calculator.R.id.buttondiv -> com.melvincypher.calculator.R.id.r
+    com.melvincypher.calculator.R.id.buttoneql -> com.melvincypher.calculator.R.id.s
