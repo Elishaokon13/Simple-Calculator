@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:10
+-keep class com.melvincypher.calculator.Applications { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.melvincypher.calculator.DebugActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.melvincypher.calculator.MainActivity { <init>(...); }
+

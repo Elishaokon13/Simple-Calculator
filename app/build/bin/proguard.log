@@ -1,0 +1,74 @@
+ProGuard, version 6.0.3
+ProGuard is released under the GNU General Public License. You therefore
+must ensure that programs that link to it (a, com.a4455jkjh.d, ...)
+carry the GNU General Public License as well. Alternatively, you can
+apply for an exception with the author of ProGuard.
+Reading input...
+Reading program directory [/storage/emulated/0/AppProjects/Simple Calculator/app/build/bin/classesdebug_proguard]
+Reading library jar [/data/data/com.aide.ui/no_backup/.aide/android.jar]
+Initializing...
+Note: the configuration refers to the unknown class 'com.google.vending.licensing.ILicensingService'
+Note: the configuration refers to the unknown class 'com.android.vending.licensing.ILicensingService'
+Note: the configuration refers to the unknown class 'android.support.annotation.Keep'
+Note: the configuration refers to the unknown class 'android.support.annotation.Keep'
+Note: the configuration refers to the unknown class 'android.support.annotation.Keep'
+Note: the configuration refers to the unknown class 'android.support.annotation.Keep'
+Note: the configuration refers to the unknown class 'android.support.annotation.Keep'
+Note: adrt.ADRTReflector calls 'Field.getType'
+Note: adrt.ADRT accesses a declared field 'adrt$enabled' dynamically
+      Maybe this is program field 'com.melvincypher.calculator.Applications { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.Applications$100000000 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.BuildConfig { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.DebugActivity { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.DebugActivity$100000000 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000000 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000001 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000002 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000003 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000004 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000005 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000006 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000007 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000008 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000009 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000010 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000011 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000012 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000013 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000014 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000015 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.MainActivity$100000016 { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R$attr { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R$color { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R$drawable { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R$id { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R$layout { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R$string { boolean adrt$enabled; }'
+      Maybe this is program field 'com.melvincypher.calculator.R$style { boolean adrt$enabled; }'
+Note: there were 7 references to unknown classes.
+      You should check your configuration for typos.
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#unknownclass)
+Note: there were 1 classes trying to access generic signatures using reflection.
+      You should consider keeping the signature attributes
+      (using '-keepattributes Signature').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#attributes)
+Note: there were 1 accesses to class members by means of introspection.
+      You should consider explicitly keeping the mentioned class members
+      (using '-keep' or '-keepclassmembers').
+      (http://proguard.sourceforge.net/manual/troubleshooting.html#dynamicalclassmember)
+Ignoring unused library classes...
+  Original number of library classes: 4750
+  Final number of library classes:    377
+Printing kept classes, fields, and methods...
+Shrinking...
+Printing usage to [/storage/emulated/0/AppProjects/Simple Calculator/app/build/bin/proguard.usage.txt]...
+Removing unused program classes and class elements...
+  Original number of program classes: 72
+  Final number of program classes:    54
+Obfuscating...
+Printing mapping to [/storage/emulated/0/AppProjects/Simple Calculator/app/build/bin/proguard.mapping.txt]...
+Writing output...
+Preparing output directory [/storage/emulated/0/AppProjects/Simple Calculator/app/build/bin/proguard]
+  Copying resources from program directory [/storage/emulated/0/AppProjects/Simple Calculator/app/build/bin/classesdebug_proguard]

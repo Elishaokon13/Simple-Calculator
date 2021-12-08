@@ -1,0 +1,61 @@
+adrt.ADRT:
+    private static final java.lang.String AIDE_PACKAGE_NAME
+    10:10:public ADRT()
+    169:171:public static void disconnectDebugger()
+adrt.ADRTLongMap:
+    private static final int LOAD_FACTOR
+    26:35:public ADRTLongMap(int)
+    71:76:public void clear()
+    79:81:public void put(long,long)
+    112:123:public void remove(long,long)
+    126:135:public boolean contains(long,long)
+    139:148:public boolean contains(long)
+    152:162:public int count(long)
+    166:178:public void remove(long)
+    181:190:public long get(long)
+    236:236:public int size()
+    244:246:public void startIterator()
+    284:284:public long nextIteratorKey()
+adrt.ADRTLongSet:
+    private static final int LOAD_FACTOR
+    22:28:public ADRTLongSet(int)
+    81:93:public void remove(long)
+    112:112:public boolean empty()
+adrt.ADRTReflector:
+    6:6:public ADRTReflector()
+adrt.ADRTSender:
+    7:7:public ADRTSender()
+    29:34:public static void sendStop(java.lang.String)
+adrt.ADRTThread:
+    321:325:public final void onVariableWrite(int,byte)
+    329:333:public final void onVariableWrite(int,short)
+    337:341:public final void onVariableWrite(int,char)
+    345:349:public final void onVariableWrite(int,boolean)
+    353:357:public final void onVariableWrite(int,long)
+    361:365:public final void onVariableWrite(int,float)
+    369:373:public final void onVariableWrite(int,double)
+    395:401:public final void onByteVariableDeclare(java.lang.String,int)
+    405:411:public final void onShortVariableDeclare(java.lang.String,int)
+    415:421:public final void onCharVariableDeclare(java.lang.String,int)
+    425:431:public final void onLongVariableDeclare(java.lang.String,int)
+    435:441:public final void onBoolVariableDeclare(java.lang.String,int)
+    445:451:public final void onFloatVariableDeclare(java.lang.String,int)
+    455:461:public final void onDoubleVariableDeclare(java.lang.String,int)
+com.melvincypher.calculator.BuildConfig
+com.melvincypher.calculator.BuildConfig$0$debug
+com.melvincypher.calculator.R
+com.melvincypher.calculator.R$0$debug
+com.melvincypher.calculator.R$attr
+com.melvincypher.calculator.R$attr$0$debug
+com.melvincypher.calculator.R$color
+com.melvincypher.calculator.R$color$0$debug
+com.melvincypher.calculator.R$drawable
+com.melvincypher.calculator.R$drawable$0$debug
+com.melvincypher.calculator.R$id
+com.melvincypher.calculator.R$id$0$debug
+com.melvincypher.calculator.R$layout
+com.melvincypher.calculator.R$layout$0$debug
+com.melvincypher.calculator.R$string
+com.melvincypher.calculator.R$string$0$debug
+com.melvincypher.calculator.R$style
+com.melvincypher.calculator.R$style$0$debug

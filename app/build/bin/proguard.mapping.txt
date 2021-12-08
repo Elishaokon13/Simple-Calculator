@@ -1,0 +1,398 @@
+adrt.ADRT -> a.a:
+    adrt.ADRTThreadLocal threadlocal -> a
+    java.util.Map metadataFileNames -> b
+    java.util.Map metadataFileIds -> c
+    adrt.ADRTLongMap metadataCallGraph -> d
+    java.util.ArrayList currentBreakpoints -> e
+    java.util.Map fileIdBreakpoints -> f
+    java.util.Map fileIdClasses -> g
+    java.lang.Object suspendLock -> h
+    boolean isSuspended -> i
+    adrt.ADRTThread currentBreakpointThread -> j
+    java.lang.Object enabledLock -> k
+    java.util.Map toggleFields -> l
+    adrt.ADRTLongSet enabledFileIds -> m
+    boolean enableAllClasses -> n
+    java.lang.Object contextLock -> o
+    android.content.Context context -> p
+    boolean isDebuggingDisabled -> q
+    java.lang.String packageName -> r
+    java.lang.String processName -> s
+    void connectDebugger(android.content.Context,java.lang.String,boolean,boolean) -> a
+    void disableVersion() -> h
+    long getCurrentVersion() -> i
+    long getDisabledVersion() -> j
+    void loadMetadata() -> k
+    void disableDebugging() -> l
+    java.lang.String getPackageName() -> a
+    java.lang.String getFileName(long) -> a
+    long getFileId(java.lang.String) -> b
+    boolean[] getBreakpointLines(long) -> b
+    boolean onBreakpointHit(adrt.ADRTThread) -> a
+    void suspendThread() -> b
+    void enableDebugging(boolean) -> a
+    void enableDebugging() -> m
+    void enableDebugging(java.lang.String,boolean) -> a
+    void setBreakpoints(java.util.ArrayList) -> a
+    void stepOver() -> c
+    void stepOut() -> d
+    void stepIn() -> e
+    void stop() -> f
+    void disconnect() -> g
+    void resume(java.util.ArrayList) -> b
+    void sendFields(java.lang.String) -> a
+    void onContext(android.content.Context,java.lang.String) -> a
+    void onClassLoad(long,java.lang.String) -> a
+    adrt.ADRTThread onMethodEnter(long) -> c
+    void <clinit>() -> <clinit>
+adrt.ADRTLogCatReader -> a.b:
+    android.content.Context context -> a
+    void <init>() -> <init>
+    void onContext(android.content.Context,java.lang.String) -> a
+    void run() -> run
+adrt.ADRTLongMap -> a.c:
+    int[] SIZES -> a
+    long[] keys -> b
+    long[] oldkeys -> c
+    long[] values -> d
+    long[] oldvalues -> e
+    int slots -> f
+    int count -> g
+    int sizeexp -> h
+    int iteratorIndex -> i
+    int iteratorStep -> j
+    long iteratorKey -> k
+    long iteratorValue -> l
+    long iteratorThekey -> m
+    adrt.ADRTLongSet added -> n
+    void <init>() -> <init>
+    void closure(adrt.ADRTLongSet) -> a
+    void insert(long,long) -> a
+    void rehash() -> c
+    java.lang.String toString() -> toString
+    void startIterator(long) -> a
+    boolean hasMoreIteratorElements() -> a
+    long nextIteratorValue() -> b
+    void <clinit>() -> <clinit>
+adrt.ADRTLongSet -> a.d:
+    int[] SIZES -> a
+    long[] keys -> b
+    long[] oldkeys -> c
+    int slots -> d
+    int count -> e
+    int sizeexp -> f
+    int iteratorIndex -> g
+    long iteratorKey -> h
+    void <init>() -> <init>
+    void clear() -> a
+    void put(adrt.ADRTLongSet) -> a
+    void put(long) -> a
+    boolean contains(long) -> b
+    void rehash() -> f
+    int size() -> b
+    java.lang.String toString() -> toString
+    void startIterator() -> c
+    boolean hasMoreIteratorElements() -> d
+    long nextIteratorKey() -> e
+    void <clinit>() -> <clinit>
+adrt.ADRTMetadata -> a.e:
+    int[] FILE_IDS -> a
+    java.lang.String[] FILE_NAMES -> b
+    int[][] FILE_CALLED_FILES -> c
+    int[][] FILE_CALLING_FILES -> d
+    void <clinit>() -> <clinit>
+adrt.ADRTReceiver -> a.f:
+    void <init>() -> <init>
+    void onContext(android.content.Context) -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+adrt.ADRTReflector -> a.g:
+    java.util.Set toStringClasses -> a
+    void getFieldValueToObjectString(java.lang.Object,java.lang.String,java.util.List,java.util.List,java.util.ArrayList) -> a
+    void getFieldValueToObjectString(java.lang.Object,java.lang.Class,java.lang.String,java.util.List,java.util.List,java.util.ArrayList) -> a
+    java.lang.Object getObjectFieldValue(java.lang.Object,java.lang.String) -> a
+    java.lang.Object getObjectFieldValue(java.lang.Object,java.lang.Class,java.lang.String) -> a
+    void getFieldValues(java.lang.Object,java.util.List,java.util.List,java.util.List) -> a
+    void getFieldValues(java.lang.Object,java.lang.Class,boolean,java.util.List,java.util.List,java.util.List) -> a
+    java.lang.String toString(java.lang.Object) -> a
+    java.lang.String getObjectId(java.lang.Object) -> c
+    java.lang.String toObjectString(java.lang.Object) -> b
+adrt.ADRTSender -> a.h:
+    android.content.Context context -> a
+    java.lang.String debuggerPackageName -> b
+    void onContext(android.content.Context,java.lang.String) -> a
+    void sendConnect(java.lang.String) -> a
+    void sendBreakpointHit(java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList) -> a
+    void sendFields(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList) -> a
+    void sendLogcatLines(java.lang.String[]) -> a
+adrt.ADRTThread -> a.i:
+    long currentFileId -> a
+    boolean[] currentBreakpointLines -> b
+    boolean[] BOOLEAN_EMPTY -> c
+    int stackFramePos -> d
+    int stackPos -> e
+    java.lang.String[] stackVariables -> f
+    char[] stackVariableTypes -> g
+    long[] stackLongs -> h
+    float[] stackFloats -> i
+    double[] stackDoubles -> j
+    java.lang.Object[] stackObjects -> k
+    int framePos -> l
+    long[] frameFiles -> m
+    int[] frameStackPoss -> n
+    int stepFramePos -> o
+    int stepStartFramePos -> p
+    void <init>() -> <init>
+    void clearStep() -> a
+    void setStepOver() -> b
+    void setStepIn() -> c
+    void setStepOut() -> d
+    void sendBreakpointHit(int) -> b
+    void getStackTrace(java.lang.String,int,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList) -> a
+    java.lang.String getVariableToString(int,boolean) -> a
+    void sendFields(java.lang.String) -> a
+    void getPathToString(java.lang.String,java.util.List,java.util.List,java.util.ArrayList) -> a
+    java.lang.String[] getAccesses(java.lang.String) -> b
+    void getPathObjectFields(java.lang.String,java.util.List,java.util.List,java.util.ArrayList) -> b
+    void growStack() -> f
+    void growFrames() -> g
+    void onVariableWrite(int,int) -> a
+    void onVariableWrite(int,java.lang.Object) -> a
+    void onIntVariableDeclare(java.lang.String,int) -> a
+    void onObjectVariableDeclare(java.lang.String,int) -> b
+    void onThisAvailable(java.lang.Object) -> a
+    void onMethodEnter(long) -> a
+    void onStatementStart(int) -> a
+    void onBreakpointHit(int) -> c
+    void onMethodExit() -> e
+    void <clinit>() -> <clinit>
+adrt.ADRTThreadLocal -> a.j:
+    void <init>() -> <init>
+    adrt.ADRTThread initialValue() -> a
+    java.lang.Object initialValue() -> initialValue
+com.melvincypher.calculator.Applications -> com.melvincypher.calculator.Applications:
+    java.lang.Thread$UncaughtExceptionHandler uncaughtExceptionHandler -> a
+    boolean adrt$enabled -> b
+    java.lang.Thread$UncaughtExceptionHandler access$L1000000(com.melvincypher.calculator.Applications) -> a
+    void access$S1000000(com.melvincypher.calculator.Applications,java.lang.Thread$UncaughtExceptionHandler) -> a
+    void onCreate() -> onCreate
+    java.lang.String getStackTrace(java.lang.Throwable) -> a
+    java.lang.String access$1000002(com.melvincypher.calculator.Applications,java.lang.Throwable) -> a
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+    void access$Sandroid$app$Application$1(com.melvincypher.calculator.Applications) -> b
+com.melvincypher.calculator.Applications$0$debug -> com.melvincypher.calculator.a:
+    void onCreate(com.melvincypher.calculator.Applications) -> a
+    java.lang.String getStackTrace(com.melvincypher.calculator.Applications,java.lang.Throwable) -> a
+com.melvincypher.calculator.Applications$100000000 -> com.melvincypher.calculator.b:
+    com.melvincypher.calculator.Applications this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.Applications) -> <init>
+    void uncaughtException(java.lang.Thread,java.lang.Throwable) -> uncaughtException
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.Applications access$0(com.melvincypher.calculator.Applications$100000000) -> a
+com.melvincypher.calculator.Applications$100000000$0$debug -> com.melvincypher.calculator.c:
+    void uncaughtException(com.melvincypher.calculator.Applications$100000000,java.lang.Thread,java.lang.Throwable) -> a
+com.melvincypher.calculator.DebugActivity -> com.melvincypher.calculator.DebugActivity:
+    java.lang.String[] exceptionType -> a
+    java.lang.String[] errMessage -> b
+    boolean adrt$enabled -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+    void access$Sandroid$app$Activity$23(com.melvincypher.calculator.DebugActivity,android.os.Bundle) -> a
+com.melvincypher.calculator.DebugActivity$0$debug -> com.melvincypher.calculator.d:
+    void onCreate(com.melvincypher.calculator.DebugActivity,android.os.Bundle) -> a
+com.melvincypher.calculator.DebugActivity$100000000 -> com.melvincypher.calculator.e:
+    com.melvincypher.calculator.DebugActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.DebugActivity) -> <init>
+    void onClick(android.content.DialogInterface,int) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.DebugActivity access$0(com.melvincypher.calculator.DebugActivity$100000000) -> a
+com.melvincypher.calculator.DebugActivity$100000000$0$debug -> com.melvincypher.calculator.f:
+    void onClick(com.melvincypher.calculator.DebugActivity$100000000,android.content.DialogInterface,int) -> a
+com.melvincypher.calculator.MainActivity -> com.melvincypher.calculator.MainActivity:
+    android.widget.Button button0 -> a
+    android.widget.Button button1 -> b
+    android.widget.Button button2 -> c
+    android.widget.Button button3 -> d
+    android.widget.Button button4 -> e
+    android.widget.Button button5 -> f
+    android.widget.Button button6 -> g
+    android.widget.Button button7 -> h
+    android.widget.Button button8 -> i
+    android.widget.Button button9 -> j
+    android.widget.Button buttonAdd -> k
+    android.widget.Button buttonSub -> l
+    android.widget.Button buttonDivision -> m
+    android.widget.Button buttonMul -> n
+    android.widget.Button button10 -> o
+    android.widget.Button buttonC -> p
+    android.widget.Button buttonEqual -> q
+    android.widget.EditText crunchifyEditText -> r
+    float mValueOne -> s
+    float mValueTwo -> t
+    boolean crunchifyAddition -> u
+    boolean mSubtract -> v
+    boolean crunchifyMultiplication -> w
+    boolean crunchifyDivision -> x
+    boolean adrt$enabled -> y
+    void onCreate(android.os.Bundle) -> onCreate
+    void <init>() -> <init>
+    void <clinit>() -> <clinit>
+    void access$Sandroid$app$Activity$23(com.melvincypher.calculator.MainActivity,android.os.Bundle) -> a
+com.melvincypher.calculator.MainActivity$0$debug -> com.melvincypher.calculator.g:
+    void onCreate(com.melvincypher.calculator.MainActivity,android.os.Bundle) -> a
+com.melvincypher.calculator.MainActivity$100000000 -> com.melvincypher.calculator.h:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000000) -> a
+com.melvincypher.calculator.MainActivity$100000000$0$debug -> com.melvincypher.calculator.i:
+    void onClick(com.melvincypher.calculator.MainActivity$100000000,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000001 -> com.melvincypher.calculator.j:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000001) -> a
+com.melvincypher.calculator.MainActivity$100000001$0$debug -> com.melvincypher.calculator.k:
+    void onClick(com.melvincypher.calculator.MainActivity$100000001,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000002 -> com.melvincypher.calculator.l:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000002) -> a
+com.melvincypher.calculator.MainActivity$100000002$0$debug -> com.melvincypher.calculator.m:
+    void onClick(com.melvincypher.calculator.MainActivity$100000002,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000003 -> com.melvincypher.calculator.n:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000003) -> a
+com.melvincypher.calculator.MainActivity$100000003$0$debug -> com.melvincypher.calculator.o:
+    void onClick(com.melvincypher.calculator.MainActivity$100000003,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000004 -> com.melvincypher.calculator.p:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000004) -> a
+com.melvincypher.calculator.MainActivity$100000004$0$debug -> com.melvincypher.calculator.q:
+    void onClick(com.melvincypher.calculator.MainActivity$100000004,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000005 -> com.melvincypher.calculator.r:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000005) -> a
+com.melvincypher.calculator.MainActivity$100000005$0$debug -> com.melvincypher.calculator.s:
+    void onClick(com.melvincypher.calculator.MainActivity$100000005,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000006 -> com.melvincypher.calculator.t:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000006) -> a
+com.melvincypher.calculator.MainActivity$100000006$0$debug -> com.melvincypher.calculator.u:
+    void onClick(com.melvincypher.calculator.MainActivity$100000006,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000007 -> com.melvincypher.calculator.v:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000007) -> a
+com.melvincypher.calculator.MainActivity$100000007$0$debug -> com.melvincypher.calculator.w:
+    void onClick(com.melvincypher.calculator.MainActivity$100000007,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000008 -> com.melvincypher.calculator.x:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000008) -> a
+com.melvincypher.calculator.MainActivity$100000008$0$debug -> com.melvincypher.calculator.y:
+    void onClick(com.melvincypher.calculator.MainActivity$100000008,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000009 -> com.melvincypher.calculator.z:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000009) -> a
+com.melvincypher.calculator.MainActivity$100000009$0$debug -> com.melvincypher.calculator.aa:
+    void onClick(com.melvincypher.calculator.MainActivity$100000009,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000010 -> com.melvincypher.calculator.ab:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000010) -> a
+com.melvincypher.calculator.MainActivity$100000010$0$debug -> com.melvincypher.calculator.ac:
+    void onClick(com.melvincypher.calculator.MainActivity$100000010,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000011 -> com.melvincypher.calculator.ad:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000011) -> a
+com.melvincypher.calculator.MainActivity$100000011$0$debug -> com.melvincypher.calculator.ae:
+    void onClick(com.melvincypher.calculator.MainActivity$100000011,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000012 -> com.melvincypher.calculator.af:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000012) -> a
+com.melvincypher.calculator.MainActivity$100000012$0$debug -> com.melvincypher.calculator.ag:
+    void onClick(com.melvincypher.calculator.MainActivity$100000012,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000013 -> com.melvincypher.calculator.ah:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000013) -> a
+com.melvincypher.calculator.MainActivity$100000013$0$debug -> com.melvincypher.calculator.ai:
+    void onClick(com.melvincypher.calculator.MainActivity$100000013,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000014 -> com.melvincypher.calculator.aj:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000014) -> a
+com.melvincypher.calculator.MainActivity$100000014$0$debug -> com.melvincypher.calculator.ak:
+    void onClick(com.melvincypher.calculator.MainActivity$100000014,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000015 -> com.melvincypher.calculator.al:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000015) -> a
+com.melvincypher.calculator.MainActivity$100000015$0$debug -> com.melvincypher.calculator.am:
+    void onClick(com.melvincypher.calculator.MainActivity$100000015,android.view.View) -> a
+com.melvincypher.calculator.MainActivity$100000016 -> com.melvincypher.calculator.an:
+    com.melvincypher.calculator.MainActivity this$0 -> a
+    boolean adrt$enabled -> b
+    void <init>(com.melvincypher.calculator.MainActivity) -> <init>
+    void onClick(android.view.View) -> onClick
+    void <clinit>() -> <clinit>
+    com.melvincypher.calculator.MainActivity access$0(com.melvincypher.calculator.MainActivity$100000016) -> a
+com.melvincypher.calculator.MainActivity$100000016$0$debug -> com.melvincypher.calculator.ao:
+    void onClick(com.melvincypher.calculator.MainActivity$100000016,android.view.View) -> a

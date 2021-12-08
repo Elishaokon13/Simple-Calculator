@@ -1,0 +1,38 @@
+com.melvincypher.calculator.Applications
+com.melvincypher.calculator.Applications: Applications()
+com.melvincypher.calculator.DebugActivity
+com.melvincypher.calculator.DebugActivity: DebugActivity()
+com.melvincypher.calculator.MainActivity
+com.melvincypher.calculator.MainActivity: MainActivity()
+com.melvincypher.calculator.R$color: int colorAccent
+com.melvincypher.calculator.R$color: int colorPrimary
+com.melvincypher.calculator.R$color: int colorPrimaryDark
+com.melvincypher.calculator.R$drawable: int Ic
+com.melvincypher.calculator.R$drawable: int button
+com.melvincypher.calculator.R$drawable: int c
+com.melvincypher.calculator.R$drawable: int download
+com.melvincypher.calculator.R$drawable: int ic_launcher
+com.melvincypher.calculator.R$drawable: int roundedbutton
+com.melvincypher.calculator.R$id: int button0
+com.melvincypher.calculator.R$id: int button1
+com.melvincypher.calculator.R$id: int button10
+com.melvincypher.calculator.R$id: int button2
+com.melvincypher.calculator.R$id: int button3
+com.melvincypher.calculator.R$id: int button4
+com.melvincypher.calculator.R$id: int button5
+com.melvincypher.calculator.R$id: int button6
+com.melvincypher.calculator.R$id: int button7
+com.melvincypher.calculator.R$id: int button8
+com.melvincypher.calculator.R$id: int button9
+com.melvincypher.calculator.R$id: int buttonC
+com.melvincypher.calculator.R$id: int buttonadd
+com.melvincypher.calculator.R$id: int buttondiv
+com.melvincypher.calculator.R$id: int buttoneql
+com.melvincypher.calculator.R$id: int buttonmul
+com.melvincypher.calculator.R$id: int buttonsub
+com.melvincypher.calculator.R$id: int edt1
+com.melvincypher.calculator.R$id: int relative1
+com.melvincypher.calculator.R$layout: int activity_main
+com.melvincypher.calculator.R$string: int app_name
+com.melvincypher.calculator.R$string: int footer
+com.melvincypher.calculator.R$style: int AppTheme
